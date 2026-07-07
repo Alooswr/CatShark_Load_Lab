@@ -1,0 +1,42 @@
+{
+  "mode": "GB28181",
+  "http": {},
+  "mqtt": {},
+  "gb28181": {
+    "sip": {
+      "server_ip": "",
+      "server_port": 5060,
+      "domain_id": "",
+      "local_device_ip": "",
+      "local_sip_start_port": 15060,
+      "device_id_prefix": "340200000013200",
+      "device_count": 20000,
+      "password": "",
+      "transport": "UDP",
+      "heartbeat_interval": 30.0,
+      "register_expires": 3600,
+      "ramp_seconds": 600,
+      "duration_seconds": 1800,
+      "sip_timeout": 5.0,
+      "offline_simulation_enabled": false,
+      "offline_probability": 0.0,
+      "offline_duration_seconds": 10.0,
+      "channels_per_device": 1
+    },
+    "media": {
+      "enabled": false,
+      "rtp_transport": "UDP",
+      "local_port_start": 30000,
+      "local_port_end": 30009,
+      "video_file_path": "",
+      "concurrent_streams": 1,
+      "bitrate_kbps": 512,
+      "fps": 25,
+      "video_codec": "H264",
+      "payload_format": "PS_OVER_RTP",
+      "loop": true,
+      "trigger_mode": "invite_then_stream",
+      "max_first_version_streams": 10
+    }
+  }
+}
